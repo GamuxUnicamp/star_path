@@ -1,10 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scenes/ShipScene/ShipScene.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/ShipScene/Stats/Stats.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Scenes/ShipScene/Stats.tres" type="DynamicFont" id=4]
-[ext_resource path="res://Scenes/CenaTexto/CenaTexto.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/CenaTexto/CenaTexto.tscn" type="PackedScene" id=4]
 
 [sub_resource type="ViewportTexture" id=1]
 viewport_path = NodePath("Monitor")
@@ -31,18 +30,6 @@ margin_top = 89.843
 margin_right = 469.124
 margin_bottom = 301.843
 
-[node name="Puzzle" type="Node2D" parent="."]
-
-[node name="Next" type="Button" parent="."]
-margin_left = 1454.62
-margin_top = 914.625
-margin_right = 1854.62
-margin_bottom = 1014.62
-focus_mode = 0
-custom_fonts/font = ExtResource( 4 )
-enabled_focus_mode = 0
-text = "-> To be continued"
-
 [node name="Monitor" type="Viewport" parent="."]
 size = Vector2( 1920, 1080 )
 own_world = true
@@ -50,9 +37,9 @@ disable_3d = true
 usage = 0
 audio_listener_enable_2d = true
 
-[node name="Texto" parent="Monitor" instance=ExtResource( 5 )]
+[node name="Texto" parent="Monitor" instance=ExtResource( 4 )]
 
 [node name="SpriteMonitor" type="Sprite" parent="."]
-position = Vector2( 1350.36, 350.59 )
+position = Vector2( 1353.99, 354.22 )
 scale = Vector2( 0.5, -0.5 )
 texture = SubResource( 1 )
